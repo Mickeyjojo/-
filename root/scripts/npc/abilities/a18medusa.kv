@@ -1,0 +1,160 @@
+"medusa"
+{
+	"medusa_1"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/medusa/medusa_1"
+		"AbilityTextureName"			"medusa_split_shot"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_attack_damage"		"30 60 90 120 150 180"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"arrow_count"				"2 3 4 5 6 8"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"split_shot_bonus_range"	"100"
+			}
+		}
+	}
+
+	"medusa_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/medusa/medusa_2"
+		"AbilityTextureName"			"medusa_mystic_snake"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Medusa.MysticSnake.Cast"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		"HasScepterUpgrade"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.4"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"16"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"475"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"snake_jumps"			"4 5 6 7 8 9"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"snake_damage"			"100 200 400 800 1600 3200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"snake_damage_scale"	"20"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"snake_agility_gain"	"11 13 15 17 19 21"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"snake_agility_duration"	"12"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"initial_speed"			"800"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"return_speed"			"800"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stone_form_scepter"	"1.0"
+			}
+		}
+	}
+
+	"medusa_3"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/medusa/medusa_3"
+		"AbilityTextureName"			"medusa_stone_gaze"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"chance"					"5 6 7 8 9 12"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"1.2"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_physical_damage"		"50"
+			}
+		}
+	}
+}

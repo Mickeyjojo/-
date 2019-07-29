@@ -1,0 +1,67 @@
+// No spaces in event names, max length 32
+// All strings are case sensitive
+//
+// valid data key types are:
+//   string : a zero terminated string
+//   bool   : unsigned int, 1 bit
+//   byte   : unsigned int, 8 bit
+//   short  : signed int, 16 bit
+//   long   : signed int, 32 bit
+//   float  : float, 32 bit
+//   uint64 : unsigned int 64 bit
+//   local  : any data, but not networked to clients
+//
+// following key names are reserved:
+//   local      : if set to 1, event is not networked to clients
+//   unreliable : networked, but unreliable
+//   suppress   : never fire this event
+//   time	: firing server time
+//   eventid	: holds the event ID
+
+"CustomEvents"
+{
+	"custom_npc_first_spawned"
+	{
+		"entindex"					"short"
+	}
+	"custom_missing_count_change"
+	{
+		"PlayerID" 					"short"
+		"MissingCount" 				"long"
+	}
+	"custom_inventory_contents_changed"
+	{
+		"EntityIndex"				"short"
+	}
+	"custom_unit_ability_added"
+	{
+		"entityIndex"				"short"
+		"abilityIndex"				"short"
+	}
+	"custom_round_changed"
+	{
+		"round"						"short"
+		"endless"					"bool"
+	}
+	"custom_elite_spawned"
+	{
+		"iEntityIndex"				"short"
+		"iPlayerID"					"short"
+		"iRound"					"long"
+		"sModifierName"				"string"
+	}
+	"custom_roshan_health_change"
+	{
+		"CurrentHealth"				"long"
+		"MaxHealth"					"long"
+		"iPlayerID"					"short"
+	}
+	"custom_update_player_building"
+	{
+		"iPlayerID"					"short"
+		"iUnitEntIndex"				"long"
+		"bIsHero"					"bool"
+		"bIsRemove"					"bool"
+	}
+}
+

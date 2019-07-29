@@ -1,0 +1,302 @@
+"abilities_endless"
+{
+    
+	"endless_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_1"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"2"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"chance"			"10"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_movespeed"	"800"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"0.5"
+			}
+		}
+	}
+
+	"endless_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_2"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+	"endless_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_3"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"health_percent"	"50"
+			}
+		}
+	}
+
+	"endless_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_4"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"chance"			"30"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"physical_constant_block"				"50"
+			}
+		}
+	}
+
+	"endless_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_5"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"chance"			"15"
+			}
+		}
+	}
+
+	"endless_6"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_6"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+	"endless_7"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_7"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_damage_percent""3"
+			}
+		}
+	}
+
+	"endless_boss_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_boss_1"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"2"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"chance"			"5"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_movespeed"	"800"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"1"
+			}
+		}
+	}
+
+	"endless_boss_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_boss_2"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+	"endless_boss_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_boss_3"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"health_percent"	"50"
+			}
+		}
+	}
+
+	"endless_boss_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_boss_4"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"chance"			"30"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"physical_constant_block"				"50"
+			}
+		}
+	}
+
+	"endless_boss_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_boss_5"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"chance"			"15"
+			}
+		}
+	}
+
+	"endless_boss_6"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_boss_6"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+
+	"endless_boss_7"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/endless/endless_boss_7"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_damage_percent""3"
+			}
+		}
+	}
+}

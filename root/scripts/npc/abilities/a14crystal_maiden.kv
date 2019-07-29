@@ -1,0 +1,188 @@
+"crystal_maiden"
+{
+	"crystal_maiden_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/crystal_maiden/crystal_maiden_1"
+		"AbilityTextureName"			"crystal_maiden_frostbite"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"hero_Crystal.frostbite"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.3"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10 9 8 7 5 3"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"30 50 80 130 220 280"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"total_damage"		"212 356 402 654 809 985"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"0.5"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"creep_duration"	"1.2"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"600"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	"crystal_maiden_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/crystal_maiden/crystal_maiden_2"
+		"AbilityTextureName"			"crystal_maiden_brilliance_aura"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"mana_regen"		"4 5 6 7 8 9"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"mana_regen_self"	"8 10 12 14 16 18"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"1200"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+	"crystal_maiden_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/crystal_maiden/crystal_maiden_3"
+		"AbilityTextureName"			"crystal_maiden_freezing_field"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySound"					"hero_Crystal.freezingField.wind"
+
+		"HasScepterUpgrade"			"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityChannelTime"			"7.0"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityChannelAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15"
+		"AbilityDuration"				"7.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"60 70 90 130 180 240"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"835"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"explosion_radius"	"300"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"explosion_interval"	"0.1"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"movespeed_slow"	"-40"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"slow_duration"		"1.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"explosion_min_dist"	"195"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"explosion_max_dist"	"785"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"122 273 332 501 686 880"
+			}
+			"09"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration_tooltip"	"7"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"scepter_frostbite_chance"	"35"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"scepter_frostbite_damage_ptg"	"200"
+			}
+		}
+	}
+}

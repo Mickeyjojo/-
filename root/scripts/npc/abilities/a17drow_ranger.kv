@@ -1,0 +1,134 @@
+"drow_ranger"
+{
+	"drow_ranger_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/drow_ranger/drow_ranger_1"
+		"AbilityTextureName"			"drow_ranger_frost_arrows"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Hero_DrowRanger.FrostArrows"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1200"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.0 0.0 0.0 0.0"
+		"AbilityDuration"				"3"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"0 0 0 0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"agility_multiplier"			"0.2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"frost_arrows_movement_speed"	"-10 -20 -30 -40 -40 -40"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"frost_arrows_duration"	"3"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+	"drow_ranger_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/drow_ranger/drow_ranger_2"
+		"AbilityTextureName"			"drow_ranger_trueshot"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+
+		"AbilityCastRange"				"800"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"trueshot_ranged_attack_speed"	"10 15 20 25 30 35"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"700"
+			}
+		}
+	}
+
+	"drow_ranger_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/drow_ranger/drow_ranger_3"
+		"AbilityTextureName"			"drow_ranger_marksmanship"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		"HasScepterUpgrade"				"1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_damage"					"300 500 700 900 1200 1400"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"split_count_scepter"			"2"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"scepter_range"					"350"
+			}
+		}
+	}
+}

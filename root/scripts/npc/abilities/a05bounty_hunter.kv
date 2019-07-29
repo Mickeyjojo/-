@@ -1,0 +1,184 @@
+"bounty_hunter"
+{
+	"bounty_hunter_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/bounty_hunter/bounty_hunter_1"
+		"AbilityTextureName"			"bounty_hunter_shuriken_toss"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySound"					"Hero_BountyHunter.Shuriken"
+
+		"HasScepterUpgrade"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastRange"				"600"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCooldown"				"12 11 10 9 8 7"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50 60 70 80 90 100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_damage"			"200 500 800 1100 1400 1700"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_factor"			"100 150 200 250 300 350"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"					"1000"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bounce_aoe"			"600"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bounces"				"6"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"ministun"				"0.1"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"scepter_ministun"		"0.75"
+			}
+		}
+	}
+
+	"bounty_hunter_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/bounty_hunter/bounty_hunter_2"
+		"AbilityTextureName"			"bounty_hunter_jinada"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySound"					"Hero_BountyHunter.Jinada"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12 10 8 6 4 2"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"200 300 400 500 600 700"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_steal"			"12 14 16 18 20 22"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+
+	"bounty_hunter_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/bounty_hunter/bounty_hunter_3"
+		"AbilityTextureName"			"bounty_hunter_track"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Hero_BountyHunter.Target"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10 9 8 7 6 5"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"10 15 20 25 30 40"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"target_crit_multiplier"	"140 170 170 200 200 250"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"threshold_hp_percent"	"20"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stack_count"			"5"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"min_gold"				"2 4 6 8 10 12"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_gold"				"4 8 12 16 20 24"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cast_range_tooltip"	"1000"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"true_sight_radius"		"1000"
+			}
+		}
+	}
+}

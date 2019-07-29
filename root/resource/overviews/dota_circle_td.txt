@@ -1,0 +1,8 @@
+dota_circle_td
+{
+	material materials/overviews/dota_circle_td.vmat
+	pos_x -6144
+	pos_y 6144
+	scale 12.000
+}
+

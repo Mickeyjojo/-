@@ -1,0 +1,188 @@
+"necrolyte"
+{
+	"necrolyte_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/necrolyte/necrolyte_1"
+		"AbilityTextureName"			"necrolyte_death_pulse"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySound"					"Hero_Necrolyte.DeathPulse"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10 9 8 7 6 5"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"30 60 90 120 150 300"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"base_damage"				"250 300 350 400 450 500"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"intellect_damage_factor"	"1.0 1.4 1.8 2.2 2.6 3.2"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"aoe_radius"				"800"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"speed"						"450"
+			}
+			
+		}
+	}
+	"necrolyte_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/necrolyte/necrolyte_2"
+		"AbilityTextureName"			"necrolyte_heartstopper_aura"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"HasScepterUpgrade"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_damage"			"40 100 160 220 280 340"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"intellect_damage_factor"		"0.05 0.1 0.15 0.2 0.25 0.3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"intellect_bonus_factor"		"0.05 0.1 0.15 0.2 0.25 0.3"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"scepter_intellect_bonus_factor"	"0.2"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"1000"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_think_interval"		"0.5"
+			}
+		}
+	}
+	"necrolyte_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/necrolyte/necrolyte_3"
+		"AbilityTextureName"			"necrolyte_reapers_scythe"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySound"					"Hero_Necrolyte.ReapersScythe.Target"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+
+		"HasScepterUpgrade"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastGestureSlot"		"DEFAULT"
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.55"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"7"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"80 130 180 230 280 330"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"1.5"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage_factor"				"0.2 0.3 0.4 0.5 0.6 0.7"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"scepter_aoe_radius"		"800"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"scepter_extra_count"		"2"
+			}
+		}
+	}
+}

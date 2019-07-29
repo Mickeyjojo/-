@@ -1,0 +1,1656 @@
+"abilities_enemy"
+{
+	"state_resistance_25"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/state_resistance_25"
+		"AbilityTextureName"			"state_resistance_25"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_state_resistance""25"
+			}
+		}
+	}
+	"state_resistance_50"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/state_resistance_50"
+		"AbilityTextureName"			"state_resistance"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_state_resistance""50"
+			}
+		}
+	}
+	"state_resistance_100"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/state_resistance_100"
+		"AbilityTextureName"			"state_resistance"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_state_resistance""100"
+			}
+		}
+	}
+    // 03
+    "fast_repair"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w03_fast_repair"
+		"AbilityTextureName"			"shredder_reactive_armor"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"			"50"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health_regen_percent"			"20"
+			}
+		}
+	}
+    // 04
+    "cowardly_rush"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w04_cowardly_rush"
+		"AbilityTextureName"			"bounty_hunter_twinblade_track"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"120"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"2"
+			}
+		}
+	}
+    // 06
+    "stinky"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"brewmaster_drunken_brawler"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_evasion"	"10"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_stinky"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"
+				}
+			}
+		}
+	}
+    // 08
+	"nihility"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w08_nihility"
+		"AbilityTextureName"			"arc_warden_spark_wraith"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"10"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"incoming_spell_damage"	"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"1"
+			}
+		}
+	}
+    // 09
+	"conjured_health"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w09_conjured_health"
+		"AbilityTextureName"			"lone_druid_spirit_bear"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"physical_constant_block"			"70"
+			}
+		}
+	}
+    // 10
+	"tortoise_taunt"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w10_tortoise_taunt"
+		"AbilityTextureName"			"axe_berserkers_call"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"30"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"2.8"
+			}
+		}
+	}
+    // 13
+	"natural_power"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w13_natural_power"
+		"AbilityTextureName"			"lone_druid_spirit_bear"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health_regen_constant"			"160"
+			}
+		}
+	}
+	// 14
+	"ass_hole_jump"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w14_ass_hole_jump"
+		"AbilityTextureName"			"dark_seer_vacuum"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"8"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"absolute_movespeed"	"1000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_percent"			"40"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"0.2"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"	"40"
+			}
+		}
+	}
+    // 15
+	"mana_shield"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w15_mana_shield"
+		"AbilityTextureName"			"medusa_mana_shield"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_per_mana"			"2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"incoming_damage_percent"			"90"
+			}
+		}
+	}
+	// 16
+	"mercy"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w16_mercy"
+		"AbilityTextureName"			"enchantress_untouchable"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attackspeed_reduce"	"45"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"1.5"
+			}
+		}
+	}
+    // 17
+	"sprint"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w17_sprint"
+		"AbilityTextureName"			"slardar_sprint"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"10"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"90"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"incoming_damage_percent"		"30"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"6"
+			}
+		}
+	}
+	// 18
+    "rampage"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w18_rampage"
+		"AbilityTextureName"			"slark_pounce"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"5"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"500"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"0.7"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"				"30"
+			}
+		}
+	}
+    // 19
+	"paddling"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w19_paddling"
+		"AbilityTextureName"			"morphling_waveform"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"20"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"1"
+			}
+		}
+	}
+    // 20
+	"stomp"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w20_stomp"
+		"AbilityTextureName"			"centaur_hoof_stomp"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"				"20"
+		"AbilityManaCost"				"100"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"1000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"1.2"
+			}
+		}
+	}
+	// 21
+	"insulation"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w21_insulation"
+		"AbilityTextureName"			"antimage_spell_shield"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_absorb"			"3000"
+			}
+		}
+	}
+    // 22
+	"phase_book"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w22_phase_book"
+		"AbilityTextureName"			"puck_phase_shift"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"5"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"				"80"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"1"
+			}
+		}
+	}
+    // 24
+	"life_power"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"satyr_hellcaller_unholy_aura"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health_regen_constant"			"300"
+			}
+		}
+
+		// Modifiers
+		// -------------------------------------------------------------------------------------------------------------
+		"Modifiers"
+		{
+			"modifier_life_power"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%health_regen_constant"
+				}
+			}
+		}
+	}
+    // 25
+	"bloodthirsty"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w25_bloodthirsty"
+		"AbilityTextureName"			"bloodseeker_thirst"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"120"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"				"30"
+			}
+		}
+	}
+    // 26
+	"girls_defense"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w26_girls_defense"
+		"AbilityTextureName"			"enchantress_enchant"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"10"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"6"
+			}
+		}
+	}
+    // 27
+	"advanced_nihility"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w27_advanced_nihility"
+		"AbilityTextureName"			"arc_warden_spark_wraith"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"10"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"incoming_spell_damage"		"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"2"
+			}
+		}
+	}
+    // 28
+	"slink"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w28_slink"
+		"AbilityTextureName"			"bounty_hunter_wind_walk"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"200"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"50"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"5.5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fade_time"				"1.5"
+			}
+		}
+	}
+    // 29
+	"soft_body"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w29_soft_body"
+		"AbilityTextureName"			"naga_siren_rip_tide"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_chance"			"40"
+			}
+		}
+	}
+    // 30
+	"witchcraft_mastery"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w30_witchcraft_mastery"
+		"AbilityTextureName"			"antimage_spell_shield"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"		"5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_resistancce"		"5"
+			}
+		}
+	}
+	"magic_resistance"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"antimage_spell_shield"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_magic_resistance"			"90"
+			}
+		}
+
+		// Modifiers
+		// -------------------------------------------------------------------------------------------------------------
+		// "Modifiers"
+		// {
+		// 	"modifier_dragon_blood_datadriven"
+		// 	{
+		// 		"Passive"	"1"
+		// 		"IsHidden"	"1"
+		// 		"Properties"
+		// 		{
+		// 			"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%bonus_magic_resistance"
+		// 		}
+		// 	}
+		// }
+	}
+    // 31
+	"resist"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w31_resist"
+		"AbilityTextureName"			"lone_druid_spirit_bear"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"physical_constant_block"			"150"
+			}
+		}
+	}
+    // 32
+	"peace"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w32_peace"
+		"AbilityTextureName"			"bane_enfeeble"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"				"10"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"1.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"1200"
+			}
+		}
+	}
+    // 33
+	"haste_run"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w33_haste_run"
+		"AbilityTextureName"			"bounty_hunter_track"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"10"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"50"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"8"
+			}
+		}
+	}
+	// 34
+	"blink"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w34_blink"
+		"AbilityTextureName"			"phantom_assassin_phantom_strike"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCooldown"				"10"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"distance"				"100"
+			}
+		}
+	}
+    // 1级魔抗
+	"null_field"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"rubick_null_field"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_magic_resistance"			"30"
+			}
+		}
+
+		// Modifiers
+		// -------------------------------------------------------------------------------------------------------------
+		"Modifiers"
+		{
+			"modifier_null_field"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%bonus_magic_resistance"
+				}
+			}
+		}
+	}
+    // 2级魔抗
+	"null_field_2"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"rubick_null_field"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_magic_resistance"			"40"
+			}
+		}
+
+		// Modifiers
+		// -------------------------------------------------------------------------------------------------------------
+		"Modifiers"
+		{
+			"modifier_null_field"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%bonus_magic_resistance"
+				}
+			}
+		}
+	}
+    // 3级魔抗
+	"null_field_3"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"rubick_null_field"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_magic_resistance"			"50"
+			}
+		}
+
+		// Modifiers
+		// -------------------------------------------------------------------------------------------------------------
+		"Modifiers"
+		{
+			"modifier_null_field"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%bonus_magic_resistance"
+				}
+			}
+		}
+	}
+    // 35
+	"undying_zombi"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w35_undying_zombi"
+		"AbilityTextureName"			"dazzle_shallow_grave"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"6"
+			}
+		}
+	}
+    // 36
+	"kind_vice"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w36_kind_vice"
+		"AbilityTextureName"			"oracle_fates_edict"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"chance"				"50"
+			}
+		}
+	}
+    // 37
+	"chaos_strike"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w37_chaos_strike"
+		"AbilityTextureName"			"chaos_knight_chaos_bolt"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"				"5"
+		"AbilityManaCost"				"100"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stun_duration_hero"	"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stun_duration_basic"	"1"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"chaos_bolt_speed"		"650"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"1200"
+			}
+		}
+	}
+    // 38
+	"dexterous"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"brewmaster_drunken_brawler"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_evasion"	"35"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_dexterous"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"
+				}
+			}
+		}
+	}
+    // 40
+	"unreal"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"phantom_assassin_blur"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_evasion"	"50"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_unreal"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"
+				}
+			}
+		}
+	}
+    // 41
+	"splendid"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w41_splendid"
+		"AbilityTextureName"			"luna_eclipse"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"				"8"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"800"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"0.7"
+			}
+		}
+	}
+    // 43
+	"justice_shield"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w43_justice_shield"
+		"AbilityTextureName"			"templar_assassin_refraction"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"500"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_count"			"20"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"20"
+			}
+		}
+	}
+    // 44
+	"drilling"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w44_drilling"
+		"AbilityTextureName"			"nyx_assassin_burrow"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"8"
+		"AbilityManaCost"				"250"
+
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
+		}
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"150"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fade_time"				"2"
+			}
+		}
+	}
+    // 45
+	"time_lock"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w45_time_lock"
+		"AbilityTextureName"			"faceless_void_time_dilation"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"				"4"
+		"AbilityCastPoint"				"0.3"
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration_hero"	"1.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration_basic"	"1.5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"1500"
+			}
+		}
+	}
+    // 46
+	"range_silence"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w46_range_silence"
+		"AbilityTextureName"			"silencer_global_silence"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"				"10"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"800"
+			}
+		}
+	}
+    // 47
+	"back_light"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w47_back_light"
+		"AbilityTextureName"			"abaddon_death_coil"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"500"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_amount"			"30000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"1200"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"			"50"
+			}
+		}
+	}
+    // 48
+	"shy_sheep"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w48_shy_sheep"
+		"AbilityTextureName"			"shadow_shaman_voodoo_alt"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"80"
+		"AbilityManaCost"				"250"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"absolute_movespeed"	"650"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"2500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"20"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"			"50"
+			}
+		}
+	}
+    // 49
+	"sturdy_armor"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w49_sturdy_armor"
+		"AbilityTextureName"			"lich_frost_armor"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"80"
+		"AbilityManaCost"				"250"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"11"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"5000"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_regen"	"2000"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"40"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"				"50"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"10"
+			}
+		}
+	}
+    // 50
+	"super_nova"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w50_super_nova"
+		"AbilityTextureName"			"phoenix_supernova"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCooldown"				"20"
+		"AbilityManaCost"				"250"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_phoenix/phoenix_supernova_death.vpcf"
+			"particle"	"particles/units/heroes/hero_phoenix/phoenix_supernova_reborn.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"
+			"particle"	"particles/units/heroes/hero_phoenix/phoenix_supernova_start.vpcf"
+			"particle"	"particles/units/heroes/hero_phoenix/phoenix_supernova_egg.vpcf"
+			"particle"	"particles/units/heroes/hero_phoenix/phoenix_supernova_hit.vpcf"
+			"particle"	"particles/units/heroes/hero_phoenix/phoenix_supernova_radiance.vpcf"
+		}
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_hero_attacks"	"33"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"5"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"stun_duration"		"2.5"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"1200"
+			}
+		}
+	}
+    // 51
+	"sky_light"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w51_sky_light"
+		"AbilityTextureName"			"puck_waning_rift"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"40"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"evasion"				"100"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"6"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"			"50"
+			}
+		}
+	}
+    // 52
+	"brave_more"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w52_brave_more"
+		"AbilityTextureName"			"witch_doctor_voodoo_restoration"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_armor"		"1"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_hp_regen"	"300"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"stack_limit"		"18"
+			}
+		}
+	}
+    // 54
+	"scorched_earth"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w54_scorched_earth"
+		"AbilityTextureName"			"doom_bringer_scorched_earth"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"100"
+		"AbilityCastPoint"				"0.3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"80"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_regen_percent"				"2"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"10"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"			"80"
+			}
+		}
+	}
+	// 55
+	"immortal_aegis"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w55_immortal_aegis"
+		"AbilityTextureName"			"roshan_spell_block"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"				"5"
+			}
+		}
+	}
+	// 55
+	"run_away"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w55_run_away"
+		"AbilityTextureName"			"roshan_halloween_angry"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"				"20"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"				"20"
+			}
+		}
+	}
+	// 55
+	"roshan_thump"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w55_roshan_thump"
+		"AbilityTextureName"			"roshan_slam"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"				"20"
+		"AbilityCastPoint"				"0.3"
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"	"30"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"800"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"reduce_attackspeed"	"400"
+			}
+		}
+	}
+	// 55
+	"roshan_deterrence"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enemy/w55_roshan_deterrence"
+		"AbilityTextureName"			"roshan_bash"
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"				"20"
+		"AbilityCastPoint"				"0.3"
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trigger_health_percent"	"40"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"800"
+			}
+		}
+	}
+}

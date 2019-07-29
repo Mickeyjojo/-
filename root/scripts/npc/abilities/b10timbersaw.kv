@@ -1,0 +1,173 @@
+"timbersaw"
+{
+	"timbersaw_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/ssr/timbersaw/timbersaw_1"
+		"AbilityTextureName"			"shredder_whirling_death"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE" 
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10.0 9.0 8.0 7.0 6.0 5.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50 60 70 80 90 110"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts"
+		}
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"buff_duration"					"3.0"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"base_damage"					"200 400 600 800 1000 1200"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"mana_damage_factor"			"10.0 11.0 12.0 13.0 14.0 15.0"
+			}
+			"05"
+			{ 
+				"var_type"						"FIELD_FLOAT"
+				"outgoing_pure_damage_pct"		"3.0 4.0 5.0 6.0 7.0 8.0"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"debuff_duration"				"3.0"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	"timbersaw_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/ssr/timbersaw/timbersaw_2"
+		"AbilityTextureName"			"timbersaw_sleight_of_fist"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10 9 8 7 7 7"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"25"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"250 360 470 580 690 800"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"100 200 300 400 500 600"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"attack_interval"				"0.2"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	"timbersaw_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/ssr/timbersaw/timbersaw_3"
+		"AbilityTextureName"			"shredder_chakram"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3" 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1200"
+		"AbilityCastPoint"				"0"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"6.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"120 150 180 210 240 270"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"aoe_radius"					"350"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_per_second"				"400 800 1200 1600 2000 2400 2800"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"movespeed_bonus"				"2.5 3.5 4.5 5.5 6.5 7.5"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"slow_health_pct"				"5"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+	}
+}

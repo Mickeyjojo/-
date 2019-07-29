@@ -1,0 +1,3349 @@
+//Generate 2019/7/13 3:3:31
+"npc_heroes_tower"
+{
+	"npc_dota_hero_monkey_king_custom"
+	{
+		//名字
+		"Name" "齐天大圣"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/monkey_king/monkey_king.vmdl"
+		//模型尺寸
+		"ModelScale" "0.81"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "657" }
+				"2" { "ItemDef" "594" }
+				"3" { "ItemDef" "608" }
+				"4" { "ItemDef" "609" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_MonkeyKing"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_MonkeyKing.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_monkey_king"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_monkey_king.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_monkey_king.vsndevts"
+		//技能1
+		"Ability1" "monkey_king_1"
+		//技能2
+		"Ability2" "monkey_king_2"
+		//技能3
+		"Ability3" "monkey_king_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "22"
+		//换算后最大攻击力
+		"AttackDamageMax" "28"
+		//v521攻击间隔
+		"AttackRate" "1.3"
+		//攻击前摇
+		"AttackAnimationPoint" "0.45"
+		//攻击范围
+		"AttackRange" "900"
+		//警戒范围
+		"AttackAcquisitionRange" "900"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "13"
+		//基础敏捷
+		"AttributeBaseAgility" "21"
+		//基础智力
+		"AttributeBaseIntelligence" "10"
+		//力量成长
+		"AttributeStrengthGain" "5"
+		//敏捷成长
+		"AttributeAgilityGain" "14"
+		//智力成长
+		"AttributeIntelligenceGain" "7"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//初始MODIFIER
+		"AmbientModifiers" "modifier_ambient_monkey_king | modifier_ambient_monkey_king_attack_range | modifier_ambient_monkey_king_attack_speed"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_monkey_king"
+
+	}
+	"npc_dota_hero_kunkka_custom"
+	{
+		//名字
+		"Name" "昆卡"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/kunkka/kunkka.vmdl"
+		//模型尺寸
+		"ModelScale" "0.84"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "14" }
+				"2" { "ItemDef" "12" }
+				"3" { "ItemDef" "357" }
+				"4" { "ItemDef" "10" }
+				"5" { "ItemDef" "8656" }
+				"6" { "ItemDef" "81" }
+				"7" { "ItemDef" "11" }
+				"8" { "ItemDef" "8657" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Kunkka"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Kunkka.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_kunkka"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_kunkka.vsndevts"
+		//技能1
+		"Ability1" "kunkka_1"
+		//技能2
+		"Ability2" "kunkka_2"
+		//技能3
+		"Ability3" "kunkka_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "35"
+		//换算后最大攻击力
+		"AttackDamageMax" "51"
+		//v521攻击间隔
+		"AttackRate" "1.5"
+		//攻击前摇
+		"AttackAnimationPoint" "0.3"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_STRENGTH"
+		//基础力量
+		"AttributeBaseStrength" "15"
+		//基础敏捷
+		"AttributeBaseAgility" "14"
+		//基础智力
+		"AttributeBaseIntelligence" "10"
+		//力量成长
+		"AttributeStrengthGain" "8"
+		//敏捷成长
+		"AttributeAgilityGain" "7"
+		//智力成长
+		"AttributeIntelligenceGain" "5"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_kunkka"
+
+	}
+	"npc_dota_hero_bounty_hunter_custom"
+	{
+		//名字
+		"Name" "赏金猎人"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/bounty_hunter/bounty_hunter.vmdl"
+		//模型尺寸
+		"ModelScale" "0.87"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "54" }
+				"2" { "ItemDef" "50" }
+				"3" { "ItemDef" "51" }
+				"4" { "ItemDef" "52" }
+				"5" { "ItemDef" "55" }
+				"6" { "ItemDef" "564" }
+				"7" { "ItemDef" "53" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_BountyHunter"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_BountyHunter.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_bounty_hunter"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_bounty_hunter.vsndevts"
+		//技能1
+		"Ability1" "bounty_hunter_1"
+		//技能2
+		"Ability2" "bounty_hunter_2"
+		//技能3
+		"Ability3" "bounty_hunter_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.6"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "22"
+		//换算后最大攻击力
+		"AttackDamageMax" "28"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.59"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "13"
+		//基础敏捷
+		"AttributeBaseAgility" "25"
+		//基础智力
+		"AttributeBaseIntelligence" "15"
+		//力量成长
+		"AttributeStrengthGain" "6"
+		//敏捷成长
+		"AttributeAgilityGain" "7"
+		//智力成长
+		"AttributeIntelligenceGain" "7"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//初始MODIFIER
+		"AmbientModifiers" "modifier_bounty_hunter_track_bounty"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_bounty_hunter"
+
+	}
+	"npc_dota_hero_shadow_shaman_custom"
+	{
+		//名字
+		"Name" "暗影萨满"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/shadowshaman/shadowshaman.vmdl"
+		//模型尺寸
+		"ModelScale" "0.91"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "247" }
+				"2" { "ItemDef" "250" }
+				"3" { "ItemDef" "248" }
+				"4" { "ItemDef" "251" }
+				"5" { "ItemDef" "249" }
+				"6" { "ItemDef" "8370" }
+				"7" { "ItemDef" "246" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_ShadowShaman"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_ShadowShaman.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_shadowshaman"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_shadowshaman.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_shadowshaman.vsndevts"
+		//技能1
+		"Ability1" "shadow_shaman_1"
+		//技能2
+		"Ability2" "shadow_shaman_2"
+		//技能3
+		"Ability3" "shadow_shaman_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "12"
+		//换算后最大攻击力
+		"AttackDamageMax" "16"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.3"
+		//攻击范围
+		"AttackRange" "1100"
+		//警戒范围
+		"AttackAcquisitionRange" "1100"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_INTELLECT"
+		//基础力量
+		"AttributeBaseStrength" "6"
+		//基础敏捷
+		"AttributeBaseAgility" "4"
+		//基础智力
+		"AttributeBaseIntelligence" "24"
+		//力量成长
+		"AttributeStrengthGain" "5"
+		//敏捷成长
+		"AttributeAgilityGain" "4"
+		//智力成长
+		"AttributeIntelligenceGain" "8"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_shadow_shaman"
+
+	}
+	"npc_dota_hero_ember_spirit_custom"
+	{
+		//名字
+		"Name" "灰烬之灵"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/ember_spirit/ember_spirit.vmdl"
+		//模型尺寸
+		"ModelScale" "1.2"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "474" }
+				"2" { "ItemDef" "473" }
+				"3" { "ItemDef" "462" }
+				"4" { "ItemDef" "472" }
+				"5" { "ItemDef" "471" }
+				"6" { "ItemDef" "469" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_EmberSpirit"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_EmberSpirit.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_earth_spirit"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_earth_spirit.vsndevts"
+		//技能1
+		"Ability1" "ember_spirit_1"
+		//技能2
+		"Ability2" "ember_spirit_2"
+		//技能3
+		"Ability3" "ember_spirit_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.6"
+		//攻击姿态
+		"HasAggressiveStance" "1"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "12"
+		//换算后最大攻击力
+		"AttackDamageMax" "20"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.4"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "6"
+		//基础敏捷
+		"AttributeBaseAgility" "14"
+		//基础智力
+		"AttributeBaseIntelligence" "10"
+		//力量成长
+		"AttributeStrengthGain" "5"
+		//敏捷成长
+		"AttributeAgilityGain" "13"
+		//智力成长
+		"AttributeIntelligenceGain" "8"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_ember_spirit"
+
+	}
+	"npc_dota_hero_necrolyte_custom"
+	{
+		//名字
+		"Name" "瘟疫法师"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/necrolyte/necrolyte.vmdl"
+		//模型尺寸
+		"ModelScale" "0.79"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "508" }
+				"2" { "ItemDef" "213" }
+				"3" { "ItemDef" "214" }
+				"4" { "ItemDef" "659" }
+				"5" { "ItemDef" "212" }
+				"6" { "ItemDef" "211" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Necrolyte"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Necrolyte.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_necrolyte"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts"
+		//技能1
+		"Ability1" "necrolyte_1"
+		//技能2
+		"Ability2" "necrolyte_2"
+		//技能3
+		"Ability3" "necrolyte_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "12"
+		//换算后最大攻击力
+		"AttackDamageMax" "14"
+		//v521攻击间隔
+		"AttackRate" "2.1"
+		//攻击前摇
+		"AttackAnimationPoint" "0.4"
+		//攻击范围
+		"AttackRange" "1100"
+		//警戒范围
+		"AttackAcquisitionRange" "1100"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_necrolyte/necrolyte_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_INTELLECT"
+		//基础力量
+		"AttributeBaseStrength" "8"
+		//基础敏捷
+		"AttributeBaseAgility" "5"
+		//基础智力
+		"AttributeBaseIntelligence" "23"
+		//力量成长
+		"AttributeStrengthGain" "5"
+		//敏捷成长
+		"AttributeAgilityGain" "4"
+		//智力成长
+		"AttributeIntelligenceGain" "6"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_necrolyte"
+
+	}
+	"npc_dota_hero_death_prophet_custom"
+	{
+		//名字
+		"Name" "死亡先知"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/death_prophet/death_prophet.vmdl"
+		//模型尺寸
+		"ModelScale" "0.93"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "169" }
+				"2" { "ItemDef" "8651" }
+				"3" { "ItemDef" "569" }
+				"4" { "ItemDef" "171" }
+				"5" { "ItemDef" "505" }
+				"6" { "ItemDef" "568" }
+				"7" { "ItemDef" "168" }
+				"8" { "ItemDef" "170" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_DeathProphet"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_DeathProphet.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_death_prophet"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_shadowshaman.vsndevts"
+		//技能1
+		"Ability1" "death_prophet_1"
+		//技能2
+		"Ability2" "death_prophet_2"
+		//技能3
+		"Ability3" "death_prophet_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "15"
+		//换算后最大攻击力
+		"AttackDamageMax" "33"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.3"
+		//攻击范围
+		"AttackRange" "1100"
+		//警戒范围
+		"AttackAcquisitionRange" "1100"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_INTELLECT"
+		//基础力量
+		"AttributeBaseStrength" "21"
+		//基础敏捷
+		"AttributeBaseAgility" "14"
+		//基础智力
+		"AttributeBaseIntelligence" "34"
+		//力量成长
+		"AttributeStrengthGain" "6"
+		//敏捷成长
+		"AttributeAgilityGain" "4"
+		//智力成长
+		"AttributeIntelligenceGain" "8"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_death_prophet"
+
+	}
+	"npc_dota_hero_luna_custom"
+	{
+		//名字
+		"Name" "露娜"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/luna/luna.vmdl"
+		//模型尺寸
+		"ModelScale" "0.74"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "451" }
+				"2" { "ItemDef" "450" }
+				"3" { "ItemDef" "453" }
+				"4" { "ItemDef" "449" }
+				"5" { "ItemDef" "448" }
+				"6" { "ItemDef" "452" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Luna"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Luna.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_luna"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_luna.vsndevts"
+		//技能1
+		"Ability1" "luna_1"
+		//技能2
+		"Ability2" "luna_2"
+		//技能3
+		"Ability3" "luna_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.6"
+		//攻击姿态
+		"HasAggressiveStance" "1"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "6"
+		//换算后最大攻击力
+		"AttackDamageMax" "10"
+		//v521攻击间隔
+		"AttackRate" "1.3"
+		//攻击前摇
+		"AttackAnimationPoint" "0.46"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_luna/luna_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "9"
+		//基础敏捷
+		"AttributeBaseAgility" "24"
+		//基础智力
+		"AttributeBaseIntelligence" "16"
+		//力量成长
+		"AttributeStrengthGain" "5"
+		//敏捷成长
+		"AttributeAgilityGain" "8"
+		//智力成长
+		"AttributeIntelligenceGain" "6"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_luna"
+
+	}
+	"npc_dota_hero_furion_custom"
+	{
+		//名字
+		"Name" "先知"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/furion/furion.vmdl"
+		//模型尺寸
+		"ModelScale" "0.79"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "33" }
+				"2" { "ItemDef" "49" }
+				"3" { "ItemDef" "30" }
+				"4" { "ItemDef" "32" }
+				"5" { "ItemDef" "8364" }
+				"6" { "ItemDef" "31" }
+				"7" { "ItemDef" "29" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Furion"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Furion.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_furion"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_furion.vsndevts"
+		//技能1
+		"Ability1" "furion_1"
+		//技能2
+		"Ability2" "furion_2"
+		//技能3
+		"Ability3" "furion_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.6"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "6"
+		//换算后最大攻击力
+		"AttackDamageMax" "10"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.4"
+		//攻击范围
+		"AttackRange" "1000"
+		//警戒范围
+		"AttackAcquisitionRange" "1000"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_furion/furion_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "600"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_INTELLECT"
+		//基础力量
+		"AttributeBaseStrength" "15"
+		//基础敏捷
+		"AttributeBaseAgility" "15"
+		//基础智力
+		"AttributeBaseIntelligence" "15"
+		//力量成长
+		"AttributeStrengthGain" "6"
+		//敏捷成长
+		"AttributeAgilityGain" "6"
+		//智力成长
+		"AttributeIntelligenceGain" "6"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_furion"
+
+	}
+	"npc_dota_hero_clinkz_custom"
+	{
+		//名字
+		"Name" "克林克兹"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/clinkz/clinkz.vmdl"
+		//模型尺寸
+		"ModelScale" "0.65"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "56" }
+				"2" { "ItemDef" "61" }
+				"3" { "ItemDef" "523" }
+				"4" { "ItemDef" "60" }
+				"5" { "ItemDef" "5151" }
+				"6" { "ItemDef" "58" }
+				"7" { "ItemDef" "57" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Clinkz"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Clinkz.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_clinkz"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_clinkz.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_clinkz.vsndevts"
+		//技能1
+		"Ability1" "clinkz_1"
+		//技能2
+		"Ability2" "clinkz_2"
+		//技能3
+		"Ability3" "clinkz_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "5"
+		//换算后最大攻击力
+		"AttackDamageMax" "22"
+		//v521攻击间隔
+		"AttackRate" "1.2"
+		//攻击前摇
+		"AttackAnimationPoint" "0.7"
+		//攻击范围
+		"AttackRange" "1100"
+		//警戒范围
+		"AttackAcquisitionRange" "1100"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_clinkz/clinkz_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "8"
+		//基础敏捷
+		"AttributeBaseAgility" "22"
+		//基础智力
+		"AttributeBaseIntelligence" "16"
+		//力量成长
+		"AttributeStrengthGain" "4"
+		//敏捷成长
+		"AttributeAgilityGain" "13"
+		//智力成长
+		"AttributeIntelligenceGain" "6"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_clinkz"
+
+	}
+	"npc_dota_hero_lina_custom"
+	{
+		//名字
+		"Name" "莉娜"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/lina/lina.vmdl"
+		//模型尺寸
+		"ModelScale" "0.81"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "320" }
+				"2" { "ItemDef" "318" }
+				"3" { "ItemDef" "321" }
+				"4" { "ItemDef" "504" }
+				"5" { "ItemDef" "319" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Lina"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Lina.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_lina"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_lina.vsndevts"
+		//技能1
+		"Ability1" "lina_1"
+		//技能2
+		"Ability2" "lina_2"
+		//技能3
+		"Ability3" "lina_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "2"
+		//换算后最大攻击力
+		"AttackDamageMax" "21"
+		//v521攻击间隔
+		"AttackRate" "1.2"
+		//攻击前摇
+		"AttackAnimationPoint" "0.75"
+		//攻击范围
+		"AttackRange" "1100"
+		//警戒范围
+		"AttackAcquisitionRange" "1100"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_lina/lina_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "1000"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_INTELLECT"
+		//基础力量
+		"AttributeBaseStrength" "12"
+		//基础敏捷
+		"AttributeBaseAgility" "9"
+		//基础智力
+		"AttributeBaseIntelligence" "22"
+		//力量成长
+		"AttributeStrengthGain" "5"
+		//敏捷成长
+		"AttributeAgilityGain" "6"
+		//智力成长
+		"AttributeIntelligenceGain" "13"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_lina"
+
+	}
+	"npc_dota_hero_dragon_knight_custom"
+	{
+		//名字
+		"Name" "龙骑士"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/dragon_knight/dragon_knight.vmdl"
+		//模型尺寸
+		"ModelScale" "0.84"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "67" }
+				"2" { "ItemDef" "66" }
+				"3" { "ItemDef" "8647" }
+				"4" { "ItemDef" "63" }
+				"5" { "ItemDef" "65" }
+				"6" { "ItemDef" "68" }
+				"7" { "ItemDef" "64" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_DragonKnight"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_DragonKnight.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_dragon_knight"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
+		//技能1
+		"Ability1" "dragon_knight_1"
+		//技能2
+		"Ability2" "dragon_knight_2"
+		//技能3
+		"Ability3" "dragon_knight_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "14"
+		//换算后最大攻击力
+		"AttackDamageMax" "25"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.5"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_STRENGTH"
+		//基础力量
+		"AttributeBaseStrength" "14"
+		//基础敏捷
+		"AttributeBaseAgility" "10"
+		//基础智力
+		"AttributeBaseIntelligence" "10"
+		//力量成长
+		"AttributeStrengthGain" "8"
+		//敏捷成长
+		"AttributeAgilityGain" "8"
+		//智力成长
+		"AttributeIntelligenceGain" "6"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_dragon_knight"
+
+	}
+	"npc_dota_hero_slardar_custom"
+	{
+		//名字
+		"Name" "斯拉达"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/slardar/slardar.vmdl"
+		//模型尺寸
+		"ModelScale" "0.88"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "275" }
+				"2" { "ItemDef" "274" }
+				"3" { "ItemDef" "273" }
+				"4" { "ItemDef" "512" }
+				"5" { "ItemDef" "276" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Slardar"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Slardar.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_slardar"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_slardar.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_slardar.vsndevts"
+		//技能1
+		"Ability1" "slardar_1"
+		//技能2
+		"Ability2" "slardar_2"
+		//技能3
+		"Ability3" "slardar_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "14"
+		//换算后最大攻击力
+		"AttackDamageMax" "28"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.36"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_STRENGTH"
+		//基础力量
+		"AttributeBaseStrength" "22"
+		//基础敏捷
+		"AttributeBaseAgility" "10"
+		//基础智力
+		"AttributeBaseIntelligence" "20"
+		//力量成长
+		"AttributeStrengthGain" "6"
+		//敏捷成长
+		"AttributeAgilityGain" "5"
+		//智力成长
+		"AttributeIntelligenceGain" "5"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_slardar"
+
+	}
+	"npc_dota_hero_slark_custom"
+	{
+		//名字
+		"Name" "斯拉克"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/slark/slark.vmdl"
+		//模型尺寸
+		"ModelScale" "0.9"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "356" }
+				"2" { "ItemDef" "336" }
+				"3" { "ItemDef" "353" }
+				"4" { "ItemDef" "355" }
+				"5" { "ItemDef" "538" }
+				"6" { "ItemDef" "8366" }
+				"7" { "ItemDef" "354" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Slark"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Slark.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_slark"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_slark.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_slark.vsndevts"
+		//技能1
+		"Ability1" "slark_1"
+		//技能2
+		"Ability2" "slark_2"
+		//技能3
+		"Ability3" "slark_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.7"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "6"
+		//换算后最大攻击力
+		"AttackDamageMax" "16"
+		//v521攻击间隔
+		"AttackRate" "1.45"
+		//攻击前摇
+		"AttackAnimationPoint" "0.5"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "10"
+		//基础敏捷
+		"AttributeBaseAgility" "12"
+		//基础智力
+		"AttributeBaseIntelligence" "8"
+		//力量成长
+		"AttributeStrengthGain" "4"
+		//敏捷成长
+		"AttributeAgilityGain" "6"
+		//智力成长
+		"AttributeIntelligenceGain" "4"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_slark"
+
+	}
+	"npc_dota_hero_tiny_custom"
+	{
+		//名字
+		"Name" "小小"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/tiny_01/tiny_01.vmdl"
+		//模型尺寸
+		"ModelScale" "0.93"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "495" }
+				"2" { "ItemDef" "494" }
+				"3" { "ItemDef" "493" }
+				"4" { "ItemDef" "497" }
+				"5" { "ItemDef" "516" }
+				"6" { "ItemDef" "496" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Tiny"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Tiny.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_tiny"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_tiny.vsndevts"
+		//技能1
+		"Ability1" "tiny_1"
+		//技能2
+		"Ability2" "tiny_2"
+		//技能3
+		"Ability3" "tiny_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "44"
+		//换算后最大攻击力
+		"AttackDamageMax" "70"
+		//v521攻击间隔
+		"AttackRate" "1.6"
+		//攻击前摇
+		"AttackAnimationPoint" "0.4"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_STRENGTH"
+		//基础力量
+		"AttributeBaseStrength" "10"
+		//基础敏捷
+		"AttributeBaseAgility" "12"
+		//基础智力
+		"AttributeBaseIntelligence" "8"
+		//力量成长
+		"AttributeStrengthGain" "4"
+		//敏捷成长
+		"AttributeAgilityGain" "6"
+		//智力成长
+		"AttributeIntelligenceGain" "4"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_tiny"
+
+	}
+	"npc_dota_hero_ursa_custom"
+	{
+		//名字
+		"Name" "熊战士"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/ursa/ursa.vmdl"
+		//模型尺寸
+		"ModelScale" "0.74"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "88" }
+				"2" { "ItemDef" "87" }
+				"3" { "ItemDef" "85" }
+				"4" { "ItemDef" "86" }
+				"5" { "ItemDef" "584" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Ursa"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Ursa.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_ursa"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_ursa.vsndevts"
+		//技能1
+		"Ability1" "ursa_1"
+		//技能2
+		"Ability2" "ursa_2"
+		//技能3
+		"Ability3" "ursa_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "3"
+		//换算后最大攻击力
+		"AttackDamageMax" "20"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.3"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "15"
+		//基础敏捷
+		"AttributeBaseAgility" "12"
+		//基础智力
+		"AttributeBaseIntelligence" "4"
+		//力量成长
+		"AttributeStrengthGain" "5"
+		//敏捷成长
+		"AttributeAgilityGain" "8"
+		//智力成长
+		"AttributeIntelligenceGain" "4"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_ursa"
+
+	}
+	"npc_dota_hero_skeleton_king_custom"
+	{
+		//名字
+		"Name" "冥魂大帝"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/wraith_king/wraith_king.vmdl"
+		//模型尺寸
+		"ModelScale" "0.94"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "151" }
+				"2" { "ItemDef" "150" }
+				"3" { "ItemDef" "148" }
+				"4" { "ItemDef" "4832" }
+				"5" { "ItemDef" "152" }
+				"6" { "ItemDef" "500" }
+				"7" { "ItemDef" "149" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_SkeletonKing"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_SkeletonKing.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_skeletonking"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_skeleton_king.vsndevts"
+		//技能1
+		"Ability1" "skeleton_king_1"
+		//技能2
+		"Ability2" "skeleton_king_2"
+		//技能3
+		"Ability3" "skeleton_king_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "9"
+		//换算后最大攻击力
+		"AttackDamageMax" "31"
+		//v521攻击间隔
+		"AttackRate" "1.2"
+		//攻击前摇
+		"AttackAnimationPoint" "0.56"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_STRENGTH"
+		//基础力量
+		"AttributeBaseStrength" "22"
+		//基础敏捷
+		"AttributeBaseAgility" "12"
+		//基础智力
+		"AttributeBaseIntelligence" "10"
+		//力量成长
+		"AttributeStrengthGain" "10"
+		//敏捷成长
+		"AttributeAgilityGain" "6"
+		//智力成长
+		"AttributeIntelligenceGain" "5"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_skeleton_king"
+
+	}
+	"npc_dota_hero_crystal_maiden_custom"
+	{
+		//名字
+		"Name" "水晶室女"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/crystal_maiden/crystal_maiden.vmdl"
+		//模型尺寸
+		"ModelScale" "0.81"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "41" }
+				"2" { "ItemDef" "40" }
+				"3" { "ItemDef" "502" }
+				"4" { "ItemDef" "39" }
+				"5" { "ItemDef" "38" }
+				"6" { "ItemDef" "311" }
+			}
+		}
+		//声音设置
+		"SoundSet" "hero_Crystal"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_CrystalMaiden.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_crystalmaiden"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_crystalmaiden.vsndevts"
+		//技能1
+		"Ability1" "crystal_maiden_1"
+		//技能2
+		"Ability2" "crystal_maiden_2"
+		//技能3
+		"Ability3" "crystal_maiden_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "3"
+		//换算后最大攻击力
+		"AttackDamageMax" "10"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.4"
+		//攻击范围
+		"AttackRange" "1000"
+		//警戒范围
+		"AttackAcquisitionRange" "1000"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_INTELLECT"
+		//基础力量
+		"AttributeBaseStrength" "8"
+		//基础敏捷
+		"AttributeBaseAgility" "6"
+		//基础智力
+		"AttributeBaseIntelligence" "38"
+		//力量成长
+		"AttributeStrengthGain" "5"
+		//敏捷成长
+		"AttributeAgilityGain" "5"
+		//智力成长
+		"AttributeIntelligenceGain" "8"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_crystal_maiden"
+
+	}
+	"npc_dota_hero_juggernaut_custom"
+	{
+		//名字
+		"Name" "主宰"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/juggernaut/juggernaut.vmdl"
+		//模型尺寸
+		"ModelScale" "0.85"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "7" }
+				"2" { "ItemDef" "9" }
+				"3" { "ItemDef" "6" }
+				"4" { "ItemDef" "8" }
+				"5" { "ItemDef" "560" }
+				"6" { "ItemDef" "62" }
+				"7" { "ItemDef" "8366" }
+				"8" { "ItemDef" "610" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Juggernaut"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Juggernaut.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_juggernaut"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		//技能1
+		"Ability1" "juggernaut_1"
+		//技能2
+		"Ability2" "juggernaut_2"
+		//技能3
+		"Ability3" "juggernaut_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.6"
+		//攻击姿态
+		"HasAggressiveStance" "1"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "22"
+		//换算后最大攻击力
+		"AttackDamageMax" "28"
+		//v521攻击间隔
+		"AttackRate" "1.2"
+		//攻击前摇
+		"AttackAnimationPoint" "0.33"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "11"
+		//基础敏捷
+		"AttributeBaseAgility" "14"
+		//基础智力
+		"AttributeBaseIntelligence" "10"
+		//力量成长
+		"AttributeStrengthGain" "5"
+		//敏捷成长
+		"AttributeAgilityGain" "9"
+		//智力成长
+		"AttributeIntelligenceGain" "6"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_juggernaut"
+
+	}
+	"npc_dota_hero_ogre_magi_custom"
+	{
+		//名字
+		"Name" "食人魔魔法师"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/ogre_magi/ogre_magi.vmdl"
+		//模型尺寸
+		"ModelScale" "0.93"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "136" }
+				"2" { "ItemDef" "105" }
+				"3" { "ItemDef" "534" }
+				"4" { "ItemDef" "134" }
+				"5" { "ItemDef" "135" }
+				"6" { "ItemDef" "133" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_OgreMagi"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_OgreMagi.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_ogre_magi"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		//技能1
+		"Ability1" "ogre_magi_1"
+		//技能2
+		"Ability2" "ogre_magi_2"
+		//技能3
+		"Ability3" "ogre_magi_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.6"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "26"
+		//换算后最大攻击力
+		"AttackDamageMax" "50"
+		//v521攻击间隔
+		"AttackRate" "1.5"
+		//攻击前摇
+		"AttackAnimationPoint" "0.3"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_INTELLECT"
+		//基础力量
+		"AttributeBaseStrength" "25"
+		//基础敏捷
+		"AttributeBaseAgility" "5"
+		//基础智力
+		"AttributeBaseIntelligence" "25"
+		//力量成长
+		"AttributeStrengthGain" "7"
+		//敏捷成长
+		"AttributeAgilityGain" "5"
+		//智力成长
+		"AttributeIntelligenceGain" "7"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_ogre_magi"
+
+	}
+	"npc_dota_hero_axe_custom"
+	{
+		//名字
+		"Name" "斧王"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/axe/axe.vmdl"
+		//模型尺寸
+		"ModelScale" "1"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "8653" }
+				"2" { "ItemDef" "3" }
+				"3" { "ItemDef" "2" }
+				"4" { "ItemDef" "5" }
+				"5" { "ItemDef" "8366" }
+				"6" { "ItemDef" "4" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Axe"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Axe.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_axe"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_axe.vsndevts"
+		//技能1
+		"Ability1" "axe_1"
+		//技能2
+		"Ability2" "axe_2"
+		//技能3
+		"Ability3" "axe_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "34"
+		//换算后最大攻击力
+		"AttackDamageMax" "50"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.5"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_STRENGTH"
+		//基础力量
+		"AttributeBaseStrength" "25"
+		//基础敏捷
+		"AttributeBaseAgility" "14"
+		//基础智力
+		"AttributeBaseIntelligence" "10"
+		//力量成长
+		"AttributeStrengthGain" "10"
+		//敏捷成长
+		"AttributeAgilityGain" "6"
+		//智力成长
+		"AttributeIntelligenceGain" "6"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_axe"
+
+	}
+	"npc_dota_hero_sven_custom"
+	{
+		//名字
+		"Name" "斯文"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/sven/sven.vmdl"
+		//模型尺寸
+		"ModelScale" "0.84"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "581" }
+				"2" { "ItemDef" "17" }
+				"3" { "ItemDef" "8366" }
+				"4" { "ItemDef" "16" }
+				"5" { "ItemDef" "19" }
+				"6" { "ItemDef" "18" }
+				"7" { "ItemDef" "20" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Sven"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Sven.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_sven"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_sven.vsndevts"
+		//技能1
+		"Ability1" "sven_1"
+		//技能2
+		"Ability2" "sven_2"
+		//技能3
+		"Ability3" "sven_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "34"
+		//换算后最大攻击力
+		"AttackDamageMax" "50"
+		//v521攻击间隔
+		"AttackRate" "1.5"
+		//攻击前摇
+		"AttackAnimationPoint" "0.4"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_STRENGTH"
+		//基础力量
+		"AttributeBaseStrength" "25"
+		//基础敏捷
+		"AttributeBaseAgility" "14"
+		//基础智力
+		"AttributeBaseIntelligence" "10"
+		//力量成长
+		"AttributeStrengthGain" "7"
+		//敏捷成长
+		"AttributeAgilityGain" "7"
+		//智力成长
+		"AttributeIntelligenceGain" "6"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_sven"
+
+	}
+	"npc_dota_hero_medusa_custom"
+	{
+		//名字
+		"Name" "美杜莎"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/medusa/medusa.vmdl"
+		//模型尺寸
+		"ModelScale" "0.85"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "381" }
+				"2" { "ItemDef" "531" }
+				"3" { "ItemDef" "383" }
+				"4" { "ItemDef" "384" }
+				"5" { "ItemDef" "382" }
+				"6" { "ItemDef" "385" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Medusa"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Medusa.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_medusa"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_medusa.vsndevts"
+		//技能1
+		"Ability1" "medusa_1"
+		//技能2
+		"Ability2" "medusa_2"
+		//技能3
+		"Ability3" "medusa_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "4"
+		//换算后最大攻击力
+		"AttackDamageMax" "18"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.5"
+		//攻击范围
+		"AttackRange" "900"
+		//警戒范围
+		"AttackAcquisitionRange" "900"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_medusa/medusa_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "1200"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "8"
+		//基础敏捷
+		"AttributeBaseAgility" "16"
+		//基础智力
+		"AttributeBaseIntelligence" "12"
+		//力量成长
+		"AttributeStrengthGain" "4"
+		//敏捷成长
+		"AttributeAgilityGain" "6"
+		//智力成长
+		"AttributeIntelligenceGain" "5"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_medusa"
+
+	}
+	"npc_dota_hero_tinker_custom"
+	{
+		//名字
+		"Name" "修补匠"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/tinker/tinker.vmdl"
+		//模型尺寸
+		"ModelScale" "0.8"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "466" }
+				"2" { "ItemDef" "464" }
+				"3" { "ItemDef" "465" }
+				"4" { "ItemDef" "515" }
+				"5" { "ItemDef" "463" }
+				"6" { "ItemDef" "367" }
+				"7" { "ItemDef" "618" }
+				"8" { "ItemDef" "467" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Tinker"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Tinker.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_tinker"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_tinker.vsndevts"
+		//技能1
+		"Ability1" "tinker_1"
+		//技能2
+		"Ability2" "tinker_2"
+		//技能3
+		"Ability3" "tinker_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.6"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "3"
+		//换算后最大攻击力
+		"AttackDamageMax" "11"
+		//v521攻击间隔
+		"AttackRate" "1.2"
+		//攻击前摇
+		"AttackAnimationPoint" "0.35"
+		//攻击范围
+		"AttackRange" "1100"
+		//警戒范围
+		"AttackAcquisitionRange" "1100"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "1200"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_INTELLECT"
+		//基础力量
+		"AttributeBaseStrength" "11"
+		//基础敏捷
+		"AttributeBaseAgility" "8"
+		//基础智力
+		"AttributeBaseIntelligence" "25"
+		//力量成长
+		"AttributeStrengthGain" "4"
+		//敏捷成长
+		"AttributeAgilityGain" "4"
+		//智力成长
+		"AttributeIntelligenceGain" "13"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_tinker"
+
+	}
+	"npc_dota_hero_nevermore_custom"
+	{
+		//名字
+		"Name" "影魔"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/shadow_fiend/shadow_fiend.vmdl"
+		//模型尺寸
+		"ModelScale" "0.98"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "387" }
+				"2" { "ItemDef" "509" }
+				"3" { "ItemDef" "486" }
+				"4" { "ItemDef" "488" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Nevermore"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Nevermore.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_nevermore"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
+		//技能1
+		"Ability1" "nevermore_1"
+		//技能2
+		"Ability2" "nevermore_2"
+		//技能3
+		"Ability3" "nevermore_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "1"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "6"
+		//换算后最大攻击力
+		"AttackDamageMax" "15"
+		//v521攻击间隔
+		"AttackRate" "1.2"
+		//攻击前摇
+		"AttackAnimationPoint" "0.5"
+		//攻击范围
+		"AttackRange" "1100"
+		//警戒范围
+		"AttackAcquisitionRange" "1100"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "1200"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "10"
+		//基础敏捷
+		"AttributeBaseAgility" "21"
+		//基础智力
+		"AttributeBaseIntelligence" "12"
+		//力量成长
+		"AttributeStrengthGain" "6"
+		//敏捷成长
+		"AttributeAgilityGain" "13"
+		//智力成长
+		"AttributeIntelligenceGain" "5"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_nevermore"
+
+	}
+	"npc_dota_hero_drow_ranger_custom"
+	{
+		//名字
+		"Name" "卓尔游侠"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/drow/drow_base.vmdl"
+		//模型尺寸
+		"ModelScale" "0.97"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "78" }
+				"2" { "ItemDef" "77" }
+				"3" { "ItemDef" "75" }
+				"4" { "ItemDef" "80" }
+				"5" { "ItemDef" "76" }
+				"6" { "ItemDef" "267" }
+				"7" { "ItemDef" "79" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_DrowRanger"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_DrowRanger.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_drow"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_drowranger.vsndevts"
+		//技能1
+		"Ability1" "drow_ranger_1"
+		//技能2
+		"Ability2" "drow_ranger_2"
+		//技能3
+		"Ability3" "drow_ranger_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.65"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "4"
+		//换算后最大攻击力
+		"AttackDamageMax" "18"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.65"
+		//攻击范围
+		"AttackRange" "1100"
+		//警戒范围
+		"AttackAcquisitionRange" "1100"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "1250"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "8"
+		//基础敏捷
+		"AttributeBaseAgility" "26"
+		//基础智力
+		"AttributeBaseIntelligence" "12"
+		//力量成长
+		"AttributeStrengthGain" "4"
+		//敏捷成长
+		"AttributeAgilityGain" "10"
+		//智力成长
+		"AttributeIntelligenceGain" "6"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_drow_ranger"
+
+	}
+	"npc_dota_hero_phantom_assassin_custom"
+	{
+		//名字
+		"Name" "幻影刺客"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/phantom_assassin/phantom_assassin.vmdl"
+		//模型尺寸
+		"ModelScale" "0.86"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "138" }
+				"2" { "ItemDef" "140" }
+				"3" { "ItemDef" "137" }
+				"4" { "ItemDef" "141" }
+				"5" { "ItemDef" "139" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_PhantomAssassin"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_PhantomAssassin.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_phantom_assassin"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_phantom_assassin.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_phantom_assassin.vsndevts"
+		//技能1
+		"Ability1" "phantom_assassin_1"
+		//技能2
+		"Ability2" "phantom_assassin_2"
+		//技能3
+		"Ability3" "phantom_assassin_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.6"
+		//攻击姿态
+		"HasAggressiveStance" "1"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "8"
+		//换算后最大攻击力
+		"AttackDamageMax" "24"
+		//v521攻击间隔
+		"AttackRate" "1.2"
+		//攻击前摇
+		"AttackAnimationPoint" "0.3"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_AGILITY"
+		//基础力量
+		"AttributeBaseStrength" "10"
+		//基础敏捷
+		"AttributeBaseAgility" "14"
+		//基础智力
+		"AttributeBaseIntelligence" "6"
+		//力量成长
+		"AttributeStrengthGain" "8"
+		//敏捷成长
+		"AttributeAgilityGain" "13"
+		//智力成长
+		"AttributeIntelligenceGain" "4"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_phantom_assassin"
+
+	}
+	"npc_dota_hero_leshrac_custom"
+	{
+		//名字
+		"Name" "拉希克"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/leshrac/leshrac.vmdl"
+		//模型尺寸
+		"ModelScale" "0.84"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "346" }
+				"2" { "ItemDef" "347" }
+				"3" { "ItemDef" "529" }
+				"4" { "ItemDef" "570" }
+				"5" { "ItemDef" "345" }
+				"6" { "ItemDef" "591" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Leshrac"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Leshrac.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_leshrac"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_leshrac.vsndevts"
+		//技能1
+		"Ability1" "leshrac_1"
+		//技能2
+		"Ability2" "leshrac_2"
+		//技能3
+		"Ability3" "leshrac_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "3"
+		//换算后最大攻击力
+		"AttackDamageMax" "11"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.4"
+		//攻击范围
+		"AttackRange" "900"
+		//警戒范围
+		"AttackAcquisitionRange" "900"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_INTELLECT"
+		//基础力量
+		"AttributeBaseStrength" "5"
+		//基础敏捷
+		"AttributeBaseAgility" "2"
+		//基础智力
+		"AttributeBaseIntelligence" "18"
+		//力量成长
+		"AttributeStrengthGain" "5"
+		//敏捷成长
+		"AttributeAgilityGain" "5"
+		//智力成长
+		"AttributeIntelligenceGain" "8"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_leshrac"
+
+	}
+	"npc_dota_hero_centaur_custom"
+	{
+		//名字
+		"Name" "半人马战行者"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/centaur/centaur.vmdl"
+		//模型尺寸
+		"ModelScale" "0.74"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "362" }
+				"2" { "ItemDef" "363" }
+				"3" { "ItemDef" "359" }
+				"4" { "ItemDef" "360" }
+				"5" { "ItemDef" "8366" }
+				"6" { "ItemDef" "358" }
+				"7" { "ItemDef" "364" }
+				"8" { "ItemDef" "361" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_Centaur"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_Centaur.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_centaur"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_centaur.vsndevts"
+		//技能1
+		"Ability1" "centaur_1"
+		//技能2
+		"Ability2" "centaur_2"
+		//技能3
+		"Ability3" "centaur_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "200"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "25"
+		//换算后最大攻击力
+		"AttackDamageMax" "31"
+		//v521攻击间隔
+		"AttackRate" "1.6"
+		//攻击前摇
+		"AttackAnimationPoint" "0.3"
+		//攻击范围
+		"AttackRange" "700"
+		//警戒范围
+		"AttackAcquisitionRange" "700"
+		//投射物特效
+		"ProjectileModel" "particles/base_attacks/ranged_hero.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_STRENGTH"
+		//基础力量
+		"AttributeBaseStrength" "25"
+		//基础敏捷
+		"AttributeBaseAgility" "15"
+		//基础智力
+		"AttributeBaseIntelligence" "15"
+		//力量成长
+		"AttributeStrengthGain" "8"
+		//敏捷成长
+		"AttributeAgilityGain" "7"
+		//智力成长
+		"AttributeIntelligenceGain" "5"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_centaur"
+
+	}
+	"npc_dota_hero_obsidian_destroyer_custom"
+	{
+		//名字
+		"Name" "殁境神蚀者"
+		//基类
+		"BaseClass" "npc_dota_creature"
+		//模型
+		"Model" "models/heroes/obsidian_destroyer/obsidian_destroyer.vmdl"
+		//模型尺寸
+		"ModelScale" "0.7"
+		//挂载饰品
+		"Creature" 
+		{
+			"AttachWearables"
+			{
+				"1" { "ItemDef" "187" }
+				"2" { "ItemDef" "533" }
+				"3" { "ItemDef" "190" }
+				"4" { "ItemDef" "226" }
+				"5" { "ItemDef" "188" }
+				"6" { "ItemDef" "189" }
+			}
+		}
+		//声音设置
+		"SoundSet" "Hero_ObsidianDestroyer"
+		//选取音效
+		"HeroSelectSoundEffect" "Hero_ObsidianDestroyer.Pick"
+		//粒子目录
+		"particle_folder" "particles/units/heroes/hero_obsidian_destroyer"
+		//声音文件
+		"GameSoundsFile" "soundevents/game_sounds_heroes/game_sounds_obsidian_destroyer.vsndevts"
+		//语音文件
+		"VoiceFile" "soundevents/voscripts/game_sounds_vo_outworld_destroyer.vsndevts"
+		//技能1
+		"Ability1" "obsidian_destroyer_1"
+		//技能2
+		"Ability2" "obsidian_destroyer_2"
+		//技能3
+		"Ability3" "obsidian_destroyer_3"
+		//技能槽位
+		"AbilityLayout" "4"
+		//血条高度
+		"HealthBarOffset" "300"
+		//移动速度
+		"MovementSpeed" "300"
+		//转身速度
+		"MovementTurnRate" "0.5"
+		//攻击姿态
+		"HasAggressiveStance" "0"
+		//移动类型
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		//护甲值
+		"ArmorPhysical" "0"
+		//魔抗
+		"MagicalResistance" "0"
+		//生命值
+		"StatusHealth" "100"
+		//生命恢复
+		"StatusHealthRegen" "0.25"
+		//魔法值
+		"StatusMana" "200"
+		//魔法恢复
+		"StatusManaRegen" "1"
+		//攻击类型
+		"AttackCapabilities" "DOTA_UNIT_CAP_RANGED_ATTACK"
+		//换算后最小攻击力
+		"AttackDamageMin" "2"
+		//换算后最大攻击力
+		"AttackDamageMax" "21"
+		//v521攻击间隔
+		"AttackRate" "1.4"
+		//攻击前摇
+		"AttackAnimationPoint" "0.46"
+		//攻击范围
+		"AttackRange" "1100"
+		//警戒范围
+		"AttackAcquisitionRange" "1100"
+		//投射物特效
+		"ProjectileModel" "particles/units/heroes/hero_obsidian_destroyer/obsidian_destroyer_base_attack.vpcf"
+		//投射物速率
+		"ProjectileSpeed" "900"
+		//主属性
+		"AttributePrimary" "DOTA_ATTRIBUTE_INTELLECT"
+		//基础力量
+		"AttributeBaseStrength" "13"
+		//基础敏捷
+		"AttributeBaseAgility" "10"
+		//基础智力
+		"AttributeBaseIntelligence" "25"
+		//力量成长
+		"AttributeStrengthGain" "6"
+		//敏捷成长
+		"AttributeAgilityGain" "7"
+		//智力成长
+		"AttributeIntelligenceGain" "8"
+		//单位标签
+		"UnitLabel" "HERO"
+		//是否有道具栏
+		"HasInventory" "1"
+		//物品栏格数
+		"InventorySlots" "6"
+		//作为英雄生命条
+		"ConsideredHero" "1"
+		//攻击类型
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_HERO"
+		//防御类型
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_HERO"
+		//幽灵单位
+		"GhostModelUnitName" "npc_dota_hero_obsidian_destroyer"
+
+	}
+}

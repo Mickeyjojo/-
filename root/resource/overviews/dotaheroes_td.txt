@@ -1,0 +1,8 @@
+dotaheroes_td
+{
+	material materials/overviews/dotaheroes_td.vmat
+	pos_x -4384
+	pos_y 4384
+	scale 8.563
+}
+

@@ -1,0 +1,166 @@
+"slardar"
+{
+	"slardar_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/slardar/slardar_1"
+		"AbilityTextureName"			"slardar_slithereen_crush"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.35"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"9 8 7 6 5 4"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"20"
+
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_slardar.vsndevts"
+			"particle"	"particles/units/heroes/hero_slardar/slardar_crush_start.vpcf"
+			"particle"	"particles/units/heroes/hero_slardar/slardar_crush.vpcf"
+			"particle"	"particles/status_fx/status_effect_slardar_crush.vpcf"
+			"particle"	"particles/units/heroes/hero_slardar/slardar_crush_entity.vpcf"
+		}
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crush_radius"				"600"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crush_extra_slow"				"-15 -20 -25 -30 -35 -40"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"crush_extra_slow_duration"		"3 3.6 4.2 4.8 5.4 6"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"crush_stun_duration"		"1.3 1.5 1.7 1.9 2.1 2.3"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crush_damage"				"130 260 520 1040 2080 4160"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+
+	"slardar_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/slardar/slardar_2"
+		"AbilityTextureName"			"slardar_bash"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"2"
+
+		"precache"
+		{
+			"particle"	"particles/generic_gameplay/generic_bashed.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_slardar.vsndevts"
+		}
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"chance"					"10 14 18 22 30 38"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"220 260 300 340 400 500"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"armor_reduction_pct"		"25"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"					"1"
+			}
+		}
+	}
+
+	"slardar_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/slardar/slardar_3"
+		"AbilityTextureName"			"slardar_amplify_damage"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"precache"
+		{
+			"particle"	"particles/status_fx/status_effect_slardar_amp_damage.vpcf"
+			"particle"	"particles/particle_sr/slardar/slardar_amp_damage.vpcf"
+		}
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"900"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"armor_reduction"			"-5 -6 -7 -8 -9 -10"
+			}
+		}
+	}
+}

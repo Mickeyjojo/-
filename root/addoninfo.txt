@@ -1,0 +1,13 @@
+"AddonInfo"
+{
+	maps			"dota_heroes_td"
+	"TeamCount"		"1"
+	"IsPlayable"	"1"
+	"dota_heroes_td"
+	{
+		"MaxPlayers"	"4"
+	}
+	"Default_Keys"
+	{
+	}
+}

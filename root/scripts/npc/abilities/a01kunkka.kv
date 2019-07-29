@@ -1,0 +1,203 @@
+"kunkka"
+{
+	"kunkka_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/kunkka/kunkka_1"
+		"AbilityTextureName"			"kunkka_torrent"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Ability.Torrent"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastPoint"				"0.4"
+		"AbilityCastRange"				"1500"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"13"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"15 30 45 60 75 90"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"350"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movespeed_bonus"			"-35"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow_duration"				"3.0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"1.6"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"300 600 900 1200 1500 1800"
+			}
+		}
+	}
+	"kunkka_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/kunkka/kunkka_2"
+		"AbilityTextureName"			"kunkka_tidebringer"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14 12 10 8 6 4"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cleave_start_length"	"400"
+			}			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cleave_end_length"		"800"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cleave_distance"		"1600"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_bonus"			"100 300 900 1600 1800 2200"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cleave_percent"		"100 130 160 190 220 250"
+			}
+		}
+	}
+	"kunkka_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sr/kunkka/kunkka_3"
+		"AbilityTextureName"			"kunkka_ghostship"
+		"MaxLevel"						"6"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"HasScepterUpgrade"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_GHOST_SHIP"
+		"AbilityCastGestureSlot"		"DEFAULT"
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.3"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50 60 70 80 90 100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"tooltip_delay"				"3.1"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"ghostship_distance"		"2000"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"1"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"1000 2000 3000 4000 5000 6000"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"stun_radius"				"425"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"ghostship_speed"			"750"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"scepter_ghostship_num"		"3"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"scepter_ghostship_interval""2"
+			}
+		}
+	}
+}

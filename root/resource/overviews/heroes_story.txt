@@ -1,0 +1,8 @@
+heroes_story
+{
+	material materials/overviews/heroes_story.vmat
+	pos_x -6144
+	pos_y 6144
+	scale 12.000
+}
+
